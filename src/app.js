@@ -4,8 +4,8 @@ const hbs =require('hbs')
 const tmdb = require('./utils/tmdb')
 require('dotenv').config()
 
-console.log('API Key loaded:', process.env.TMDB_API_KEY ? 'Yes' : 'No x')
-console.log('First 10 chars:', process.env.TMDB_API_KEY?.substring(0, 10))
+console.log('TMDB Bearer Token loaded:', process.env.TMDB_BEARER_TOKEN ? 'Yes' : 'No x')
+console.log('First 10 chars:', process.env.TMDB_BEARER_TOKEN?.substring(0, 10))
 
 const app = express()
 const port = process.env.PORT || 5500
@@ -44,36 +44,32 @@ app.get('/help', (req, res) => {
     })
 })
                 //movie search endpoint
-app.get('/movies', (req, res) => {
-    if(!req.query.search) {
-        return res.send({
-                error: 'You need to provide a movie title to begin search'
-        })
-    }
-    tmdb.searchMovies(req.query.search, (error, movieData) => {
-        if (error) {
-            return res.send({error})
-        }
-        res.send({
-            movies: movieData
-        })
-    })
+app.get('/movies', async (req, res) => {
+  if (!req.query.search) {
+    return res.send({ error: 'You need to provide a movie title' })
+  }
+
+  try {
+    const movies = await tmdb.searchMovies(req.query.search)
+    res.send({ movies })
+  } catch (error) {
+    console.error(error.message)
+    res.send({ error: error.message })
+  }
 })
                 ///similar movies endpoint
-app.get('/similar', (req, res) => {
-    if (!req.query.movieId) {
-        return res.send({
-            error: 'You must provide a movie ID'
-        })
-    }
-    tmdb.getSimilarMovies(req.query.movieId, (error, similarData) => {
-        if (error) {
-            return res.send({error})
-        }
-        res.send({
-            similar: similarData
-        })
-    })
+app.get('/similar', async (req, res) => {
+  if (!req.query.movieId) {
+    return res.send({ error: 'You must provide a movie ID' })
+  }
+
+  try {
+    const similar = await tmdb.getSimilarMovies(req.query.movieId)
+    res.send({ similar })
+  } catch (error) {
+    console.error(error.message)
+    res.send({ error: error.message })
+  }
 })
                 //404 
 app.use((req, res) => {

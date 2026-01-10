@@ -20,7 +20,7 @@ searchForm.addEventListener('submit', (e) => {
             
             return
         }
-        if (data.movies.length >= 0) {
+        if (data.movies.length === 0) {
             searchResults.innerHTML = `<p>No movies found</p>`
             return
         }
@@ -63,8 +63,7 @@ function getSimilarMovies(movieId) {
                 similarResults.innerHTML = `<p class="error">${data.error}</p>`
                 return
             }
-
-            if (data.similar.length >= 0) {
+                if (data.similar.length === 0) {
                 similarResults.innerHTML = `<p>No similar movies found</p>`
                 return
             }
