@@ -29,7 +29,7 @@ No third-party TMDB wrapper libraries were used.
 
 ---
 
-## 📄 Pages
+##  Pages
 
 ### Similar Movies
 - Contains a navigation section
@@ -53,20 +53,20 @@ No third-party TMDB wrapper libraries were used.
 
 ---
 
-## 🎨 Design
+##  Design
 - Styled using CSS
 - Utilizes animations and keyframes
 - Single-page layout connecting all views for a clean user experience
 
 ---
 
-## 🌐 Hosted Site
+##  Hosted Site
 Check out the live application here:
 
 [![Heroku](public/img/heroku.png)](https://ramirez-similar-movies-app-34f8fab6a4fb.herokuapp.com)
 
 ---
 
-## 👤 Contributor
+##  Contributor
 [![Amadeo Ramirez](public/img/image3-c.png)](https://github.com/amadeoquinrami)
 
