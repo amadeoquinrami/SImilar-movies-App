@@ -7,7 +7,8 @@ Then you can see similar movies from one that you originally searched!
 
 ![application screenshot](public/img/similar-sc.png) 
 
-This project uses direct HTTP requests to the TMDB API via a custom Express backend. No third-party TMDB wrapper libraries were used.
+In this project I use direct HTTP requests to the TMDB API via a custom Express backend. No third-party TMDB wrapper libraries were used.
+
 ## **Table of Contents** 
 - [Pages](#page)
 - [Design](#design)
