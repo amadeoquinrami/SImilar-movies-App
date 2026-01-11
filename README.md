@@ -1,0 +1,1 @@
+This project uses direct HTTP requests to the TMDB API via a custom Express backend. No third-party TMDB wrapper libraries were used.
