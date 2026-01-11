@@ -1,44 +1,72 @@
-# **Similar Movie app**
-This site was created by Amadeo Ramirez.
--    How to use:
-Enter a movie you would love to watch in the search bar!
-Select a movie from the results
-Then you can see similar movies from one that you originally searched!
+# 🎬 Similar Movies App
 
-![application screenshot](public/img/similar-sc.png) 
+This application was created by **Amadeo Ramirez**.
 
-In this project I use direct HTTP requests to the TMDB API via a custom Express backend. No third-party TMDB wrapper libraries were used.
+The Similar Movies App allows users to search for a movie and discover other movies that are similar using data from **The Movie Database (TMDB) API**.
 
-## **Table of Contents** 
-- [Pages](#page)
-- [Design](#design)
-- [Hosted site link](#hosted-site-link)
-- [The contributor](#the-contributor)
 ---
-## Pages 
-- Similar Movies 
-    -   Conatins Navigation section 
-    -   Contains search bar.
-    -   Contains "Top" button that allows users to return to top of screen. It is constantly visiable for easy acces.
-    -   Once user searches Movie title, they can see the movies titles related. 
-    -   Footer contains links to Linkedin and Github
-- About
-    -   Contains Navigation section 
-    -   Section for user too understand what the application is about 
-    -   Contains a "back to home" to return the user to Homepage. 
-    -   Footer is present with links.
-- Help
-    -   Contains Navigation section
-    -   Section about how to use the application.
-    -   Contains a "back to home" to return the user to Homepage. 
-    -   Footer is present with links.
-## Design 
-Used CSS to style the pages. Only used one page to connect all three. 
 
--   utilized animation
--   keyframes
-## Hosted site link
-Check it out here!
-[![Heroku](public/img/heroku.png)](https://ramirez-similar-movies-app-34f8fab6a4fb.herokuapp.com/about) 
-##  The Contributor
-[![Amadeo](public/img/image3-c.png)](https://github.com/amadeoquinrami)
+## 🚀 How to Use
+1. Enter a movie title in the search bar.
+2. Select a movie from the search results.
+3. View a list of movies similar to the one you selected.
+
+![Application Screenshot](public/img/similar-sc.png)
+
+---
+
+## 🔐 API Usage
+This project uses **direct HTTP requests** to the TMDB API through a **custom Express backend**.  
+No third-party TMDB wrapper libraries were used.
+
+---
+
+## 📑 Table of Contents
+- [Pages](#pages)
+- [Design](#design)
+- [Hosted Site](#hosted-site)
+- [Contributor](#contributor)
+
+---
+
+## 📄 Pages
+
+### Similar Movies
+- Contains a navigation section
+- Includes a movie search bar
+- Displays movie results based on user input
+- Allows users to select a movie to view similar titles
+- Includes a **“Back to Top”** button for easier navigation
+- Footer includes links to GitHub and LinkedIn
+
+### About
+- Contains a navigation section
+- Explains what the application does
+- Includes a **“Back to Home”** button
+- Footer with social links
+
+### Help
+- Contains a navigation section
+- Provides instructions on how to use the application
+- Includes a **“Back to Home”** button
+- Footer with social links
+
+---
+
+## 🎨 Design
+- Styled using CSS
+- Utilizes animations and keyframes
+- Single-page layout connecting all views for a clean user experience
+
+---
+
+## 🌐 Hosted Site
+Check out the live application here:
+
+[![Heroku](public/img/heroku.png)](https://ramirez-similar-movies-app-34f8fab6a4fb.herokuapp.com)
+
+---
+
+## 👤 Contributor
+[![Amadeo Ramirez](public/img/image3-c.png)](https://github.com/amadeoquinrami)
+
