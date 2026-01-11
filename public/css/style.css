@@ -82,17 +82,17 @@ section {
     color: white;
 }
 input {
-    padding: 10px 12px;
+    padding: 15px 19px;
     border-radius: 6px;
     border: 1px solid #c7d2fe;
-    font-size: 16px;
+    font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     flex: 1;
 }
 
 input:focus {
     outline: none;
-    border-color: #2563eb; /**/
+    border-color: #45c010; /**/
 }
 button {
     padding: 10px 16px;
@@ -126,7 +126,9 @@ h2 {
     margin-bottom: 16px;
     color: white;
 } 
+/*  */
 p {
+  margin: 2px;
   padding: 20px;                  
   border: 2px solid rgba(255,255,255,0.5); 
   border-radius: 15px;            
@@ -137,6 +139,7 @@ p {
   box-shadow: 0 8px 32px rgba(0,0,0,0.2); 
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+/*  */
 div.movie-card {
     display: flex;
     border:linear-gradient(326deg, #cd1c18 0%, #66023c 74%) solid 2px;
@@ -150,6 +153,7 @@ div.movie-card {
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
+  margin-left: 15px;
   margin-bottom: 10px;
 }
 .back-to-top {
