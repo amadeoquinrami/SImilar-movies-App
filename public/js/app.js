@@ -87,3 +87,23 @@ function getSimilarMovies(movieId) {
             similarResults.innerHTML = `<p class="error">Error: ${error.message}</p>`
         })
 }
+// BACK TO TOP BUTTON LOGIC
+
+const backToTopBtn = document.getElementById("back-to-top");
+
+// Show button after scrolling
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        backToTopBtn.classList.add("show");
+    } else {
+        backToTopBtn.classList.remove("show");
+    }
+});
+
+// Smooth scroll to top
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
